@@ -51,6 +51,5 @@ public class Login
        //9- Close the browser
         driver.close();
 
-
     }
 }
