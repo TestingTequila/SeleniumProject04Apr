@@ -1,0 +1,43 @@
+TDD: Test Driven Development
+-JUnit & TestNG
+
+  we no longer need main method to execute our code
+  To run selective test cases
+  To generate the report for tests executed
+  To apply some pre & post conditions before or after executing your test case
+  Don't wish to execute some test cases, from a bunch of test cases
+
+  TestNG: 3a's
+     -@annotations:  These are used to apply pre/post conditions over the test Cases represent using @Test annotations.
+                     They are always used along with the methods
+
+      @BeforeSuite   :This will be executed only once and that too before @BeforeTest
+      @BeforeTest    :This will be executed only once and that too before @BeforeClass
+      @BeforeClass   :This will be executed only once and that too before @BeforeMethod
+      @BeforeMethod  :This will be executed before EVERY test case
+      @Test          :This is used to represent your test case
+      @AfterMethod   :This will be executed after EVERY test case
+      @AfterClass    :This will be executed only once and that too after @AfterMethod
+      @AfterTest     :This will be executed only once and that too after @AfterClass
+      @AfterSuite    :This will be executed only once and that too after @AfterTest
+      -------------------------------------
+      @DataProvider
+      @Parameter
+      -----------------------------------------------------------------------------------------------------
+     -attributes  : These are used to gain more control over the already automated test cases
+       priority
+       enabled
+       dependsOnMethods
+       alwaysRun
+       invocationCount
+       groups
+       dependsOnGroups
+       timeOut
+
+     -assertions  : These are used to validate the test Case/s
+        AssertTrue
+        AssertFalse
+        AssertEquals
+        AssertNotEquals
+        HardAssertions Vs SoftAssertions
+
