@@ -25,19 +25,23 @@ TDD: Test Driven Development
       @Parameter
       -----------------------------------------------------------------------------------------------------
      -attributes  : These are used to gain more control over the already automated test cases
-       priority
-       enabled
-       dependsOnMethods
-       alwaysRun
-       invocationCount
-       groups
-       dependsOnGroups
-       timeOut
+                  : They are always used along with the annotations
+       priority-> This defines the order of execution of Test Cases [NDP]
+       enabled -> This is used to enable/disable any test case
+       dependsOnMethods-> This is used to establish dependency of one TC over other
+       alwaysRun->This will always  execute even if dependsOnMethod is failing
+       invocationCount ->To execute a test case n number of time
+       timeOut-> To see execution of a est case within given time frame
+       groups ->This is for grouping of test cases
+       dependsOnGroups->If any test case within the group fails, this will not execute
+
 
      -assertions  : These are used to validate the test Case/s
+        Asset.Fail
         AssertTrue
         AssertFalse
         AssertEquals
         AssertNotEquals
         HardAssertions Vs SoftAssertions
 
+     Xml in TestNg

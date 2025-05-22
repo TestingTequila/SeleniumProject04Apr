@@ -1,5 +1,6 @@
 package tdd;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestNGAnnotations
@@ -16,10 +17,11 @@ public class TestNGAnnotations
     {
         System.out.println("@AfterSuite Un-Installing the required software....");
     }
-    @Test
+    @Test(priority = 1, groups = "smoke")
     public void registration()
     {
         System.out.println("@Test: This is my Registration Page....");
+        Assert.fail();
     }
 
     @BeforeClass
@@ -40,6 +42,13 @@ public class TestNGAnnotations
         System.out.println("@AfterTest: Deleting the DB.....");
     }
 
+    @Test(enabled = true, invocationCount = 10, timeOut = 1, groups = "sanity")
+    public void contactUs()
+    {
+        System.out.println("@Test: This is my Contact Us Page....");
+    }
+
+
     @AfterClass
     public void disconnectWithDb()
     {
@@ -56,15 +65,17 @@ public class TestNGAnnotations
     {
         System.out.println("@AfterMethod: Closing Browser and removing url....");
     }
-    @Test
+    @Test(priority = -1, dependsOnMethods = "registration", alwaysRun = true, groups = "smoke")
     public void login()
     {
         System.out.println("@Test: This is my login page....");
     }
 
-    @Test
-    public void contactUs()
+    @Test(priority = 3, enabled = true, groups = "sanity", dependsOnGroups = "smoke")
+    public void addToCart()
     {
-        System.out.println("@Test: This is my Contact Us Page....");
+        System.out.println("@Test: This is my addToCart Page....");
     }
+
+
 }

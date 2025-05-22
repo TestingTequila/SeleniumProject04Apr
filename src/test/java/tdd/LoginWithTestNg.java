@@ -3,6 +3,7 @@ package tdd;
 import data.AppLevelData;
 import data.TestLevelData;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,7 +20,7 @@ public class LoginWithTestNg {
         driver.get(AppLevelData.APP_URL);
     }
 
-    @Test
+    @Test(priority = 3, dependsOnMethods = "login3")
     public  void login1()
     {
         // 3- Click on My Account icon
@@ -39,7 +40,7 @@ public class LoginWithTestNg {
         ma.validateLoginStatus();
     }
 
-    @Test
+    @Test(priority = 1, enabled = true, timeOut = 2)
     public  void login2()
     {
         // 3- Click on My Account icon
@@ -59,7 +60,7 @@ public class LoginWithTestNg {
         ma.validateLoginStatus();
     }
 
-    @Test
+    @Test(priority = 2, invocationCount = 3)
     public  void login3()
     {
         // 3- Click on My Account icon
@@ -77,6 +78,8 @@ public class LoginWithTestNg {
 
         //8- Validate Login Status
         ma.validateLoginStatus();
+
+        Assert.fail();
     }
 
     @AfterMethod
