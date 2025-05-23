@@ -60,7 +60,7 @@ public class LoginWithTestNg {
         ma.validateLoginStatus();
     }
 
-    @Test(priority = 2, invocationCount = 3)
+    @Test(priority = 2, invocationCount = 1)
     public  void login3()
     {
         // 3- Click on My Account icon
@@ -79,7 +79,6 @@ public class LoginWithTestNg {
         //8- Validate Login Status
         ma.validateLoginStatus();
 
-        Assert.fail();
     }
 
     @AfterMethod

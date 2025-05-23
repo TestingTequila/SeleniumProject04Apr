@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="2" failed="13" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-23T07:30:58 IST" name="Default Suite" finished-at="2025-05-23T07:30:59 IST" duration-ms="937">
+    <groups>
+      <group name="smoke">
+        <method signature="TestNGAnnotations.registration()[pri:1, instance:tdd.TestNGAnnotations@163e4e87]" name="registration" class="tdd.TestNGAnnotations"/>
+        <method signature="TestNGAnnotations.login()[pri:-1, instance:tdd.TestNGAnnotations@163e4e87]" name="login" class="tdd.TestNGAnnotations"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNGAnnotations.contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" name="contactUs" class="tdd.TestNGAnnotations"/>
+        <method signature="TestNGAnnotations.addToCart()[pri:3, instance:tdd.TestNGAnnotations@163e4e87]" name="addToCart" class="tdd.TestNGAnnotations"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-05-23T07:30:58 IST" name="SeleniumProject04Apr" finished-at="2025-05-23T07:30:59 IST" duration-ms="937">
+      <class name="tdd.TestNGAnnotations">
+        <test-method is-config="true" signature="installSoftware()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="installSoftware" finished-at="2025-05-23T07:30:58 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- installSoftware -->
+        <test-method is-config="true" signature="createDb()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="createDb" finished-at="2025-05-23T07:30:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDb -->
+        <test-method is-config="true" signature="connectWithDb()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="connectWithDb" finished-at="2025-05-23T07:30:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectWithDb -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:58 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="checkNumber()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="checkNumber" finished-at="2025-05-23T07:30:58 IST" duration-ms="22" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This test case is failing.... expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This test case is failing.... expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tdd.TestNGAnnotations.checkNumber(TestNGAnnotations.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumber -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:58 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:58 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="compareObjects()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:58 IST" name="compareObjects" finished-at="2025-05-23T07:30:58 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected not same [Java] but found [Java]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected not same [Java] but found [Java]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failSame(Assert.java:1578)
+at org.testng.Assert.assertNotSame(Assert.java:1558)
+at org.testng.Assert.assertNotSame(Assert.java:1570)
+at tdd.TestNGAnnotations.compareObjects(TestNGAnnotations.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareObjects -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="compareSumOfNumbers()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="compareSumOfNumbers" finished-at="2025-05-23T07:30:59 IST" duration-ms="33" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [20] but found [16]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [20] but found [16]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tdd.TestNGAnnotations.compareSumOfNumbers(TestNGAnnotations.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareSumOfNumbers -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="38" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="21" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="55" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="17" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="3" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+at java.base@17.0.7/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:292)
+at java.base@17.0.7/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:282)
+at java.base@17.0.7/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:132)
+at java.base@17.0.7/java.io.OutputStreamWriter.write(OutputStreamWriter.java:205)
+at java.base@17.0.7/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+at java.base@17.0.7/java.io.PrintStream.writeln(PrintStream.java:722)
+at java.base@17.0.7/java.io.PrintStream.println(PrintStream.java:1028)
+at app//tdd.TestNGAnnotations.contactUs(TestNGAnnotations.java:49)
+at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@17.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="11" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="5" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="4" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="contactUs()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="contactUs" finished-at="2025-05-23T07:30:59 IST" duration-ms="5" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method tdd.TestNGAnnotations.contactUs() didn't finish within the time-out 1
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="registration()[pri:1, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="registration" finished-at="2025-05-23T07:30:59 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tdd.TestNGAnnotations.registration(TestNGAnnotations.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method is-config="true" signature="openBrowserAndEnterUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="openBrowserAndEnterUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndEnterUrl -->
+        <test-method signature="login()[pri:-1, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="login" finished-at="2025-05-23T07:30:59 IST" depends-on-methods="tdd.TestNGAnnotations.registration" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeBrowserAndRemoveUrl()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="closeBrowserAndRemoveUrl" finished-at="2025-05-23T07:30:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserAndRemoveUrl -->
+        <test-method signature="addToCart()[pri:3, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="addToCart" depends-on-groups="smoke" finished-at="2025-05-23T07:30:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGAnnotations.addToCart()[pri:3, instance:tdd.TestNGAnnotations@163e4e87] depends on not successfully finished methods in group "smoke"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGAnnotations.addToCart()[pri:3, instance:tdd.TestNGAnnotations@163e4e87] depends on not successfully finished methods in group "smoke"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="disconnectWithDb()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="disconnectWithDb" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectWithDb -->
+        <test-method is-config="true" signature="deleteDb()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:30:59 IST" name="deleteDb" finished-at="2025-05-23T07:30:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDb -->
+        <test-method is-config="true" signature="uninstallSoftware()[pri:0, instance:tdd.TestNGAnnotations@163e4e87]" started-at="2025-05-23T07:31:00 IST" name="uninstallSoftware" finished-at="2025-05-23T07:31:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uninstallSoftware -->
+      </class> <!-- tdd.TestNGAnnotations -->
+    </test> <!-- SeleniumProject04Apr -->
+  </suite> <!-- Default Suite -->
+</testng-results>

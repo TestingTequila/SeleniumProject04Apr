@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SeleniumProject04Apr(failed)">
+    <classes>
+      <class name="tdd.TestNGAnnotations">
+        <methods>
+          <include name="closeBrowserAndRemoveUrl"/>
+          <include name="deleteDb"/>
+          <include name="checkNumber"/>
+          <include name="compareObjects"/>
+          <include name="installSoftware"/>
+          <include name="openBrowserAndEnterUrl"/>
+          <include name="createDb"/>
+          <include name="disconnectWithDb"/>
+          <include name="addToCart"/>
+          <include name="compareSumOfNumbers"/>
+          <include name="registration"/>
+          <include name="connectWithDb"/>
+          <include name="uninstallSoftware"/>
+        </methods>
+      </class> <!-- tdd.TestNGAnnotations -->
+    </classes>
+  </test> <!-- SeleniumProject04Apr(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
