@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/91886/IdeaProjects/SeleniumProject04Apr">
+        <parameter name="url" value="https://janbaskdemo.com/"></parameter>
+        <classes>
+            <class name="tdd.LoginWithTestNg"></class>
+            <class name="tdd.LoginWithTestNg">
+                <methods>
+                    <exclude name="login1"/>
+                    <exclude name="login2"/>
+                    <include name="login3"/>
+                </methods>
+            </class>
+<!--            <class name="tdd.TestNGAnnotations">-->
+<!--                <methods>-->
+<!--                    <include name="registration"/>-->
+<!--                    <include name="connectWithDb"/>-->
+<!--                    <include name="contactUs"/>-->
+<!--                    <include name="disconnectWithDb"/>-->
+<!--                    <include name="login"/>-->
+<!--                    <include name="addToCart"/>-->
+<!--                    <include name="checkNumber"/>-->
+<!--                    <include name="compareObjects"/>-->
+<!--                    <include name="compareSumOfNumbers"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
